@@ -33,13 +33,8 @@ class MainItemViewBinder : ItemViewBinder<MainItemModel, MainItemViewBinder.Main
         holder.desc.text = item.title
     }
 
-    class MainItemViewHolder : RecyclerView.ViewHolder {
-        val icon: ImageView
-        val desc: TextView
-
-        constructor(view: View) : super(view) {
-            icon = view.findViewById(R.id.icon_res)
-            desc = view.findViewById(R.id.desc)
-        }
+    class MainItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val icon: ImageView = view.findViewById(R.id.icon_res)
+        val desc: TextView = view.findViewById(R.id.desc)
     }
 }
