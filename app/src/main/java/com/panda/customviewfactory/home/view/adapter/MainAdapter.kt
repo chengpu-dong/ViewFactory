@@ -12,12 +12,16 @@ import me.drakeet.multitype.MultiTypeAdapter
  * @Version 1.0
  */
 class MainAdapter : MultiTypeAdapter {
-    constructor() {
-        addViewBinder()
+    constructor(callback: ItemClickCallback) {
+        addViewBinder(callback)
     }
 
-    private fun addViewBinder() {
-        val viewBinder = MainItemViewBinder()
+    interface ItemClickCallback {
+        fun onItemClicked(item : MainItemModel)
+    }
+
+    private fun addViewBinder(callback: ItemClickCallback) {
+        val viewBinder = MainItemViewBinder(callback)
         this.register(MainItemModel::class.java, viewBinder)
     }
 }

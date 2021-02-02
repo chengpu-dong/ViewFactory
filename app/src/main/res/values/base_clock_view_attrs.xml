@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="hoursHandColor" format="color"/>
+        <attr name="minuteHandColor" format="color"/>
+        <attr name="secondHandColor" format="color"/>
+        <attr name="dialColor" format="color"/>
+        <attr name="scaleColor" format="color"/>
+        <attr name="scaleRadios" format="dimension"/>
+        <attr name="scalePading" format="dimension"/>
+        <attr name="anixRadio" format="dimension"/>
+        <attr name="hourHandLength" format="dimension"/>
+        <attr name="minuteHandLength" format="dimension"/>
+        <attr name="secondHandLength" format="dimension"/>
+        <attr name="hourHandWidth" format="dimension"/>
+        <attr name="minuteHandWidth" format="dimension"/>
+        <attr name="secondHandWidth" format="dimension"/>
+    </declare-styleable>
+</resources>

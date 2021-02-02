@@ -22,7 +22,7 @@ class MainViewModel() : ViewModel() {
 
     fun initData(){
         val itemList = ArrayList<MainItemModel>()
-        itemList.add(buildItem(R.drawable.ic_launcher_foreground, "ClockView"))
+        itemList.add(buildItem(R.raw.clock_view, "ClockView"))
         itemList.add(buildItem(R.drawable.ic_launcher_foreground, "BubbleTextView"))
         typeData.value = itemList
     }

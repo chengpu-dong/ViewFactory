@@ -1,5 +1,6 @@
 package com.panda.customviewfactory.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -8,11 +9,13 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.panda.customviewfactory.R
+import com.panda.customviewfactory.clockView.ClockView
+import com.panda.customviewfactory.clockView.ClockViewActivity
 import com.panda.customviewfactory.home.model.MainItemModel
 import com.panda.customviewfactory.home.view.adapter.MainAdapter
 import com.panda.customviewfactory.home.viewmodel.MainViewModel
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainAdapter.ItemClickCallback {
     private var viewModel: MainViewModel? = null
     private var adapter: MainAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
         val layoutManager: LinearLayoutManager = GridLayoutManager(this, 2)
         recyclerView.layoutManager = layoutManager
-        adapter = MainAdapter()
+        adapter = MainAdapter(this)
         recyclerView.adapter = adapter
     }
 
@@ -44,5 +47,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun initData() {
         viewModel?.initData()
+    }
+
+    override fun onItemClicked(item: MainItemModel) {
+        val title: String = item.title
+        if (title == "ClockView") {
+            startActivity(Intent(this, ClockViewActivity::class.java))
+        } else if (title == "BubbleTextView") {
+            // TODO: 2021/2/1  
+        }
     }
 }

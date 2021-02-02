@@ -9,7 +9,7 @@
     <item android:state_pressed="true">
         <shape>
             <corners android:radius="20dp" />
-            <gradient android:angle="0" android:endColor="@color/purple_500" android:startColor="@color/purple_500" />
+            <gradient android:angle="0" android:endColor="@color/purple_200" android:startColor="@color/purple_200" />
         </shape>
     </item>
     <item android:state_enabled="false">
@@ -21,7 +21,7 @@
     <item>
         <shape>
             <corners android:radius="20dp" />
-            <gradient android:angle="0" android:endColor="@color/purple_200" android:startColor="@color/purple_200" />
+            <gradient android:angle="0" android:endColor="@color/purple_500" android:startColor="@color/purple_500" />
         </shape>
     </item>
 </selector>
