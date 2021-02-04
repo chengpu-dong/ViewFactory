@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="bubble_text_view" tools:ignore="ResourceName">
+        <attr name="bgColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="arrowLocation" format="enum">
+            <enum name="top" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="left" value="3" />
+        </attr>
+        <attr name="perpendicularLength" format="dimension" />
+        <attr name="bottomEdgeLength" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+</resources>

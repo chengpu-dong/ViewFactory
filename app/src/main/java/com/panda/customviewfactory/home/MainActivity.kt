@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.panda.customviewfactory.R
+import com.panda.customviewfactory.bubbleTextView.BubbleTextViewActivity
 import com.panda.customviewfactory.clockView.ClockView
 import com.panda.customviewfactory.clockView.ClockViewActivity
 import com.panda.customviewfactory.home.model.MainItemModel
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity(), MainAdapter.ItemClickCallback {
         if (title == "ClockView") {
             startActivity(Intent(this, ClockViewActivity::class.java))
         } else if (title == "BubbleTextView") {
-            // TODO: 2021/2/1  
+            startActivity(Intent(this, BubbleTextViewActivity::class.java))
         }
     }
 }

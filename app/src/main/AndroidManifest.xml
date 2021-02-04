@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".clockView.ClockViewActivity" />
+        <activity android:name=".bubbleTextView.BubbleTextViewActivity" />
     </application>
 
 </manifest>
