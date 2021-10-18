@@ -1,7 +1,7 @@
 # CustomViewFactory
 some custom view for developer
 
-## ClockView
+## ClockView  (自定义时钟View)
 - Effect achieved
 
 ![](https://github.com/chengpu-dong/CustomViewFactory/blob/main/app/src/main/res/raw/clock_view.gif)
@@ -29,7 +29,7 @@ some custom view for developer
     </declare-styleable>
 ```
 
-## BubbleTextView
+## BubbleTextView （自定义气泡TextView）
 - Effect achieved
 
 ![](https://github.com/chengpu-dong/CustomViewFactory/blob/main/app/src/main/res/drawable-xhdpi/bubble_text_view.png)
